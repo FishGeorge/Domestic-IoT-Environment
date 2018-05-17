@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="mina-core-2.0.16">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mina-core-2.0.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sqlite-jdbc-3.21.0.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$" recursive="false" />
+  </library>
+</component>
