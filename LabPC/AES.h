@@ -5,7 +5,6 @@
 #ifndef __AES_CBC_H__
 #define __AES_CBC_H__
 
-
 void SetKey(unsigned char *key);
 unsigned char* Cipher(unsigned char* input, unsigned char* output);
 unsigned char* InvCipher(unsigned char* input, unsigned char* output);
@@ -22,7 +21,6 @@ void InvShiftRows(unsigned char state[][4]);
 void InvMixColumns(unsigned char state[][4]);
 int  Encrypt(unsigned char *input, int length, unsigned char *output);
 int  Decrypt(unsigned char *input, int length, unsigned char *output);	
-
 
 
 #endif 

@@ -400,8 +400,7 @@ static struct sockaddr_in multi_addr;
 struct sockaddr_in gateway_addr;
 static int discover_sockfd = -1;
 
-static int mulcast_recv_task(os_thread_arg_t data)
-{
+static int mulcast_recv_task(os_thread_arg_t data){
 	static int one = 1;
 	struct ip_mreq mc;
 	struct sockaddr_in listen;
@@ -426,7 +425,7 @@ static int mulcast_recv_task(os_thread_arg_t data)
 
 	setsockopt(discover_sockfd, SOL_SOCKET, SO_REUSEADDR, (char *)&one, sizeof(one));	
 	
-	/* because want to receive  report of the gateway ,so need to join multicast group 224.0.0.50 : 9898 */
+	/* because want to receive report of the gateway ,so need to join multicast group 224.0.0.50 : 9898 */
 	listen.sin_family = PF_INET;
 	listen.sin_port = htons(GROUP_RECV_PORT);
 	listen.sin_addr.s_addr = htonl(INADDR_ANY);
@@ -447,7 +446,7 @@ static int mulcast_recv_task(os_thread_arg_t data)
 	//send "whois" to 224.0.0.50 : 4321
 	multi_addr.sin_family = PF_INET;
 	multi_addr.sin_port = htons(GROUP_DISCOVER_PORT);
-	multi_addr.sin_addr.s_addr = inet_addr(GROUP_SERVER_ADDR);		
+	multi_addr.sin_addr.s_addr = inet_addr(GROUP_SERVER_ADDR);
 	sendto(discover_sockfd, whois_str, strlen(whois_str), 0, (struct sockaddr*)&multi_addr, sizeof(multi_addr));
 
 	/*
@@ -473,14 +472,11 @@ static int mulcast_recv_task(os_thread_arg_t data)
 		*/
 
 		
-		if (strstr(msg_buf,"\"heartbeat\""))
-		{
+		if (strstr(msg_buf,"\"heartbeat\"")){
 			char *token_ptr;
-			if (token_ptr = strstr(msg_buf,"\"token\""))
-			{
+			if (token_ptr = strstr(msg_buf,"\"token\"")){
 				//get token in heartbeat of gateway
-				if (token_ptr = strstr(token_ptr + 7,"\""))
-				{
+				if (token_ptr = strstr(token_ptr + 7,"\"")){
 					int32_t i;
 					uint8_t out_key[16];
 					memcpy(heart_token,token_ptr + 1,16);
@@ -488,26 +484,22 @@ static int mulcast_recv_task(os_thread_arg_t data)
 					
 					//generate out_key by heart_token and m_key
 					Encrypt(heart_token,16,out_key);
-					for (i = 0;i < sizeof(out_key);i++)
-					{
+					for (i = 0;i < sizeof(out_key);i++){
 						sprintf(key_of_write + i*2,"%02x",out_key[i]);
 					}
 				}
 			}
 		}
 		wmprintf("\r\n\r\n\r\nRecv Msg=%s\r\n\r\n\r\n",msg_buf);
-	
 	}
 }
 
-static void send_msg_to_gateway(uint8_t *data_str,int32_t data_len)
-{
+static void send_msg_to_gateway(uint8_t *data_str,int32_t data_len){
 	if (-1 != discover_sockfd)
 		sendto(discover_sockfd, data_str, data_len, 0, (struct sockaddr*)&gateway_addr, sizeof(gateway_addr));
 }
 
-void ctrl_plug_demo(uint64_t sid,uint8_t state)
-{
+void ctrl_plug_demo(uint64_t sid,uint8_t state){
 	char cmd_buf[200] = {0};
 	snprintf(cmd_buf,sizeof(cmd_buf),"{\"cmd\":\"write\",\"model\":\"plug\",\"sid\":\"%llx\",\"data\":\"{\\\"channel_0\\\":\\\"%s\\\",\\\"key\\\":\\\"%s\\\"}\"}",
 		sid,
