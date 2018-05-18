@@ -13,11 +13,13 @@ public class MulticastProtocol {
 
         InetAddress mcIPAddress = InetAddress.getByName("224.0.0.50");
         int mcPort = 4321;
-        DatagramSocket udpSocket = new DatagramSocket();
+        MulticastSocket udpSocket = new MulticastSocket(mcPort);
         DatagramPacket packet = new DatagramPacket(msg_byte, msg_byte.length);
         packet.setAddress(mcIPAddress);
         packet.setPort(mcPort);
 
+//        udpSocket.setTimeToLive(1);
+        udpSocket.joinGroup(mcIPAddress);
         udpSocket.send(packet);
 
         System.out.println("Send a multicast message: " + msg);
