@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"XB-2WD.obj" 
+TO "XB-2WD" 
+RAMSIZE(256) 
