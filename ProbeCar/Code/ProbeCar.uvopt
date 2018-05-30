@@ -189,14 +189,14 @@
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>2</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>146</TopLine>
+      <CurrentLine>157</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\XB-2WD.c</PathWithFileName>
       <FilenameWithoutPath>XB-2WD.c</FilenameWithoutPath>
@@ -1586,9 +1586,9 @@
         </Doc>
         <Doc>
           <Name>.\XB-2WD.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>146</TopLine>
+          <CurrentLine>157</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
