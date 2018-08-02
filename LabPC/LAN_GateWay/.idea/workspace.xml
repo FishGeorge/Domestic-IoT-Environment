@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/MulticastProtocol.java" line="88" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2569b5f8-d097-43fc-94ea-14f194fd1fda" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAN_GateWay/MulticastProtocol$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAN_GateWay/MulticastProtocol$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LAN_GateWay/SEUkeepingOnline.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LAN_GateWay/SEUkeepingOnline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MulticastProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MulticastProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LabServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LabServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LabServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LabServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Screenshot_20180427-171609.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +26,25 @@
       <file leaf-file-name="MulticastProtocol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MulticastProtocol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-352">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="379">
+              <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
                 <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+                <element signature="method#Receive#0;class#MulticastProtocol#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,10 +53,12 @@
       <file leaf-file-name="SEUkeepingOnline.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SEUkeepingOnline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
+            <state relative-caret-position="2500">
+              <caret line="137" column="39" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#URL_Connective#0;class#SEUkeepingOnline#0" />
+                <element signature="method#GetCookie#0;class#SEUkeepingOnline#0" />
               </folding>
             </state>
           </provider>
@@ -55,17 +80,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ddd.java" />
-        <option value="$PROJECT_DIR$/src/MulticastProtocol.java" />
         <option value="$PROJECT_DIR$/src/SEUkeepOnline.java" />
         <option value="$PROJECT_DIR$/src/SEUkeepingOnline.java" />
+        <option value="$PROJECT_DIR$/src/TestReceiver.java" />
+        <option value="$PROJECT_DIR$/src/MulticastProtocol.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="190" />
-    <option name="y" value="256" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
-    <option name="height" value="673" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -75,9 +100,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,7 +122,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MulticastProtocol">
+  <component name="RunManager" selected="Application.SEUkeepingOnline">
     <configuration name="MulticastProtocol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MulticastProtocol" />
       <module name="LAN_GateWay" />
@@ -119,6 +144,11 @@
     </configuration>
     <configuration name="SEUkeepingOnline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SEUkeepingOnline" />
+      <module name="LAN_GateWay" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestReceiver" />
       <module name="LAN_GateWay" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -166,11 +196,13 @@
     <list>
       <item itemvalue="Application.MulticastProtocol" />
       <item itemvalue="Application.SEUkeepingOnline" />
+      <item itemvalue="Application.TestReceiver" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SEUkeepingOnline" />
         <item itemvalue="Application.MulticastProtocol" />
+        <item itemvalue="Application.TestReceiver" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +220,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="190" y="256" width="974" height="673" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -200,11 +232,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42273533" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27301255" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20250522" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10104167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -224,17 +256,79 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MulticastProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2225">
+          <caret line="89" column="48" lean-forward="true" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
+            <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SEUkeepingOnline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#URL_Connective#0;class#SEUkeepingOnline#0" />
+            <element signature="method#GetCookie#0;class#SEUkeepingOnline#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MulticastProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
+            <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SEUkeepingOnline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3476">
+          <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#URL_Connective#0;class#SEUkeepingOnline#0" />
+            <element signature="method#GetCookie#0;class#SEUkeepingOnline#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MulticastProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -245,6 +339,8 @@
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#URL_Connective#0;class#SEUkeepingOnline#0" />
+            <element signature="method#GetCookie#0;class#SEUkeepingOnline#0" />
           </folding>
         </state>
       </provider>
@@ -255,7 +351,9 @@
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -266,7 +364,9 @@
           <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -277,7 +377,9 @@
           <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -288,7 +390,9 @@
           <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -299,7 +403,9 @@
           <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -310,7 +416,9 @@
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
@@ -322,23 +430,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MulticastProtocol.java">
+    <entry file="file://$PROJECT_DIR$/src/TestReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="250">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MulticastProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Multicast_Send#0;class#MulticastProtocol#0" />
             <element signature="method#Multicast_Receive#0;class#MulticastProtocol#0" />
+            <element signature="method#Receive#0;class#MulticastProtocol#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SEUkeepingOnline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
+        <state relative-caret-position="2500">
+          <caret line="137" column="39" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#URL_Connective#0;class#SEUkeepingOnline#0" />
+            <element signature="method#GetCookie#0;class#SEUkeepingOnline#0" />
           </folding>
         </state>
       </provider>

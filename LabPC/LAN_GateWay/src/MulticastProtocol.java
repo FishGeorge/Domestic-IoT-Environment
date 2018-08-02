@@ -86,8 +86,8 @@ public class MulticastProtocol {
                 public void run() {
                     try {
                         while (true) {
-                            Receive();
-//                            Multicast_Receive();
+//                            Receive();//0802 发现网关回应呼唤信息是通过组播回答的，不是说明所说的单播。待确认
+                            Multicast_Receive();
 //                            Thread.sleep(1000);
                         }
                     } catch (Exception e) {
