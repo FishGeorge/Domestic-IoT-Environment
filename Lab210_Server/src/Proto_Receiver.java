@@ -25,6 +25,16 @@ public class Proto_Receiver {
         Port = port;
     }
 
+    public void Unicast_Receive() throws Exception {
+        packet = new DatagramPacket(new byte[length], length);
+        mcSocket = new MulticastSocket(Port);
+
+        day = new Date();
+        System.out.println(df.format(day) + " [=>Receiver] UniR starts, running at: " + IpAddress + "/" + Port);
+
+//        mcSocket.close();
+    }
+
     public void Multicast_Receive() throws Exception {
         packet = new DatagramPacket(new byte[length], length);
         mcSocket = new MulticastSocket(Port);
@@ -32,20 +42,9 @@ public class Proto_Receiver {
         mcSocket.joinGroup(IpAddr);
 
         day = new Date();
-        System.out.println(df.format(day) + " [=>Receiver] McR starts, running at:" + mcSocket.getInetAddress());
+        System.out.println(df.format(day) + " [=>Receiver] MulR starts, running at: " + IpAddress + "/" + Port);
 
 //        mcSocket.leaveGroup(IpAddr);
-//        mcSocket.close();
-    }
-
-    public void Unicast_Receive() throws Exception {
-        packet = new DatagramPacket(new byte[length], length);
-        mcSocket = new MulticastSocket(Port);
-        IpAddr = InetAddress.getByName(IpAddress);
-
-        day = new Date();
-        System.out.println(df.format(day) + " [=>Receiver] UnR starts, running at:" + mcSocket.getInetAddress());
-
 //        mcSocket.close();
     }
 
@@ -64,9 +63,17 @@ public class Proto_Receiver {
 
                             mcSocket.close();
                             day = new Date();
-                            System.out.println(df.format(day) + " [=>Receiver] UnR ends.");
+                            System.out.println(df.format(day) + " [=>Receiver] UniR ends.");
                             break;
                         case 1:
+                            Unicast_Receive();
+                            while(true) {
+                                mcSocket.receive(packet);
+                                message = new String(packet.getData(), packet.getOffset(), packet.getLength());
+                                day = new Date();
+                                System.out.println(df.format(day) + " [=>Receiver] Unicast msg:" + message);
+                            }
+                        case 2:
                             Multicast_Receive();
                             mcSocket.receive(packet);
                             message = new String(packet.getData(), packet.getOffset(), packet.getLength());
@@ -76,9 +83,9 @@ public class Proto_Receiver {
                             mcSocket.leaveGroup(IpAddr);
                             mcSocket.close();
                             day = new Date();
-                            System.out.println(df.format(day) + " [=>Receiver] McR ends.");
+                            System.out.println(df.format(day) + " [=>Receiver] MulR ends.");
                             break;
-                        case 2:
+                        case 3:
                             Multicast_Receive();
                             while (true) {
                                 mcSocket.receive(packet);
@@ -94,5 +101,6 @@ public class Proto_Receiver {
                 }
             }
         });
+        receive.start();
     }
 }

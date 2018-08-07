@@ -37,26 +37,6 @@ public class Proto_Sender {
         interval = time;
     }
 
-    private void Multicast_Send() throws Exception {
-        String msg = "{\"cmd\":\"whois\"}";
-        msg_byte = msg.getBytes();
-
-        IpAddr = InetAddress.getByName("224.0.0.50");
-        Port = 4321;
-        udpSocket = new MulticastSocket(Port);
-        udpSocket.joinGroup(IpAddr);
-
-        packet = new DatagramPacket(msg_byte, msg_byte.length);
-//        packet.setAddress(IpAddr);
-//        packet.setPort(Port);
-
-        udpSocket.send(packet);
-        day = new Date();
-        System.out.println(df.format(day) + " [<=Sender] Multicast msg: " + msg);
-
-        udpSocket.close();
-    }
-
     private void Unicast_Send() throws Exception {
         IpAddr = InetAddress.getByName("224.0.0.50");
         Port = 9898;
@@ -69,7 +49,27 @@ public class Proto_Sender {
 
         udpSocket.send(packet);
         day = new Date();
-        System.out.println(df.format(day) + " [<=Sender] Unicast msg: " + message);
+        System.out.println(df.format(day) + " [<=Sender] Unicast msg:" + message);
+
+        udpSocket.close();
+    }
+
+    private void Multicast_Send() throws Exception {
+        String msg = "{\"cmd\":\"whois\"}";
+        msg_byte = msg.getBytes();
+
+        IpAddr = InetAddress.getByName("224.0.0.50");
+        Port = 4321;
+        udpSocket = new MulticastSocket(Port);
+        udpSocket.joinGroup(IpAddr);
+
+        packet = new DatagramPacket(msg_byte, msg_byte.length);
+        packet.setAddress(IpAddr);
+        packet.setPort(Port);
+
+        udpSocket.send(packet);
+        day = new Date();
+        System.out.println(df.format(day) + " [<=Sender] Multicast msg:" + msg);
 
         udpSocket.close();
     }
@@ -81,14 +81,19 @@ public class Proto_Sender {
                 try {
                     switch (send_type) {
                         case 0:
-                            Multicast_Send();
-                            break;
-                        case 1:
                             Unicast_Send();
                             break;
-                        case 2:
+                        case 1:
                             while (true) {
                                 Unicast_Send();
+                                Thread.sleep(interval);
+                            }
+                        case 2:
+                            Multicast_Send();
+                            break;
+                        case 3:
+                            while (true) {
+                                Multicast_Send();
                                 Thread.sleep(interval);
                             }
                         default:
@@ -99,5 +104,6 @@ public class Proto_Sender {
                 }
             }
         });
+        send.start();
     }
 }
