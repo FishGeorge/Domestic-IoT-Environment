@@ -2,7 +2,7 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
-public class TestReceiver {
+public class Test_Receiver {
     public static void Multicast_Receive() throws Exception {
         int mcPort = 4321;
         String mcIPStr = "224.0.0.50";

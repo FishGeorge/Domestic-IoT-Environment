@@ -5,7 +5,7 @@ import java.net.MulticastSocket;
 import java.util.Arrays;
 import java.util.Date;
 
-public class MulticastProtocol {
+public class Test_MulticastProtocol {
     public static void Multicast_Send() throws Exception {
         String msg = "{\"cmd\":\"whois\"}";
 //        String msg = "test";
