@@ -14,6 +14,7 @@ public class Proto_Receiver {
 
     private int receive_type;
     private String message = null;
+    private String heartbeat_msg = null;
     private int length = 1000;
 
     private DatagramPacket packet = null;
@@ -51,6 +52,10 @@ public class Proto_Receiver {
         return message;
     }
 
+    public String GetRecvHeartBMsg() {
+        return heartbeat_msg;
+    }
+
     public void Run() {
         Thread receive = new Thread(new Runnable() {
             @Override
@@ -80,6 +85,8 @@ public class Proto_Receiver {
                             Multicast_Receive();
                             mcSocket.receive(packet);
                             message = new String(packet.getData(), packet.getOffset(), packet.getLength());
+                            if (message.contains("heartbeat"))
+                                heartbeat_msg = message;
                             day = new Date();
                             System.out.println(df.format(day) + " [=>Receiver] Multicast msg:" + message);
 
@@ -93,6 +100,8 @@ public class Proto_Receiver {
                             while (true) {
                                 mcSocket.receive(packet);
                                 message = new String(packet.getData(), packet.getOffset(), packet.getLength());
+                                if (message.contains("heartbeat"))
+                                    heartbeat_msg = message;
                                 day = new Date();
                                 System.out.println(df.format(day) + " [=>Receiver] Multicast msg:" + message);
                             }

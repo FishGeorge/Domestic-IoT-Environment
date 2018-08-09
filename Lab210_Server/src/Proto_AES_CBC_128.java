@@ -7,15 +7,15 @@ import sun.misc.BASE64Encoder;
 
 import java.nio.charset.StandardCharsets;
 
+/**
+ * AES 是一种可逆加密算法，对用户的敏感信息加密处理
+ * 加密用的Key 可以用26个字母和数字组成
+ * 此处使用AES-128-CBC加密模式，key需要为16位
+ * 加密输出base64编码以便于解密
+ * <p>
+ * （提供其他的加密输出，用于lumi局域网通信协议）
+ */
 public class Proto_AES_CBC_128 {
-    /**
-     * AES 是一种可逆加密算法，对用户的敏感信息加密处理
-     * 加密用的Key 可以用26个字母和数字组成
-     * 此处使用AES-128-CBC加密模式，key需要为16位
-     * 加密输出base64编码以便于解密
-     * <p>
-     * （提供其他的加密输出，用于lumi局域网通信协议）
-     */
     private String mKey = null;
     private String[] StrIVParameter = null;
     private byte[] BytIVPatameter = null;
@@ -68,7 +68,7 @@ public class Proto_AES_CBC_128 {
         IvParameterSpec iv = new IvParameterSpec(BytIVPatameter);// 使用CBC模式，需要一个向量iv，可增加加密算法的强度
         cipher.init(Cipher.ENCRYPT_MODE, skeySpec, iv);
         byte[] out_bytes = cipher.doFinal(sSrc.getBytes(StandardCharsets.UTF_8));
-        // 不知道为什么这里的bytes实际上有32项，lumi只取了前16项拓展为32个字符
+        // 不知道为什么这里的bytes实际上有32项，而lumi只取了前16项拓展为32个字符
 //        System.out.println(out_bytes.length);
 //        System.out.println(out_bytes[1]+"->"+Byte2Hex(out_bytes[1]));
         StringBuilder out_str = new StringBuilder();

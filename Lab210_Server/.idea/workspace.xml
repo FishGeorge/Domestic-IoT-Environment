@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3dd48c-7cbe-4d35-abd0-644843603a0e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Doc/Screenshot_20180427-171609.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab210_Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab210_Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/LUMI_CommuProto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_AES_CBC_128.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Receiver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Receiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Sender$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_MulticastProtocol$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_MulticastProtocol$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_MulticastProtocol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_Receiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LUMI_CommuProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LUMI_CommuProto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Proto_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proto_Receiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Proto_Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proto_Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_CommuProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_CommuProto.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,32 +19,33 @@
     <session id="-2065641265">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="5" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="4103" />
+          <entry key="java" value="4329" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4103" />
+          <entry key="JAVA" value="4329" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="16" />
+          <entry key="java" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Proto_Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="253">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -75,42 +64,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Proto_Receiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="8" selection-end-column="78" />
+            <state relative-caret-position="2231">
+              <caret line="101" column="111" selection-start-line="101" selection-start-column="111" selection-end-line="101" selection-end-column="111" />
               <folding>
                 <element signature="e#1526#1527#0" expanded="true" />
                 <element signature="e#1556#1557#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1663#1664#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Proto_AES_CBC_128.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LUMI_CommuProto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Proto_AES_CBC_128.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-271">
+              <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test_CommuProto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1035">
+              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -140,10 +119,10 @@
         <option value="$PROJECT_DIR$/src/Test_MulticastProtocol.java" />
         <option value="$PROJECT_DIR$/src/Demo_AES_CBC_128.java" />
         <option value="$PROJECT_DIR$/src/LUMI_CommuProto.java" />
-        <option value="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" />
         <option value="$PROJECT_DIR$/src/Proto_Receiver.java" />
-        <option value="$PROJECT_DIR$/src/Proto_Sender.java" />
         <option value="$PROJECT_DIR$/src/Test_CommuProto.java" />
+        <option value="$PROJECT_DIR$/src/Proto_Sender.java" />
+        <option value="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" />
       </list>
     </option>
   </component>
@@ -152,6 +131,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="58" />
@@ -167,8 +152,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533788034138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533792324295" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -210,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Proto_AES_CBC_128">
+  <component name="RunManager" selected="Application.Test_CommuProto">
     <configuration name="LUMI_CommuProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LUMI_CommuProto" />
       <module name="Lab210_Server" />
@@ -221,6 +206,14 @@
     </configuration>
     <configuration name="Proto_AES_CBC_128" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Proto_AES_CBC_128" />
+      <module name="Lab210_Server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_CommuProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test_CommuProto" />
       <module name="Lab210_Server" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -250,9 +243,11 @@
     <list>
       <item itemvalue="Application.LUMI_CommuProto" />
       <item itemvalue="Application.Proto_AES_CBC_128" />
+      <item itemvalue="Application.Test_CommuProto" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test_CommuProto" />
         <item itemvalue="Application.Proto_AES_CBC_128" />
         <item itemvalue="Application.LUMI_CommuProto" />
       </list>
@@ -283,7 +278,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1098081" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1108742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -309,7 +304,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
@@ -335,46 +330,51 @@
       </provider>
     </entry>
     <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/net/DatagramSocket.java" />
-    <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java" />
-    <entry file="file://$PROJECT_DIR$/src/Proto_Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Proto_AES_CBC_128.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LUMI_CommuProto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="138">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Proto_Receiver.java">
+    <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="8" selection-end-column="78" />
-          <folding>
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_CommuProto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        <state relative-caret-position="1035">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Proto_Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Proto_Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2231">
+          <caret line="101" column="111" selection-start-line="101" selection-start-column="111" selection-end-line="101" selection-end-column="111" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Proto_AES_CBC_128.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
         </state>
       </provider>
     </entry>

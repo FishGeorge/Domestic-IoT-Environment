@@ -13,7 +13,7 @@ public class Proto_Sender {
 
     private int send_type;
     private String message = null;
-    private int interval = 0;
+    private int interval = 5000;
 
     private byte[] msg_byte;
     private DatagramPacket packet = null;
@@ -31,6 +31,7 @@ public class Proto_Sender {
 
     public void SetSendMsg(String msg) {
         message = msg;
+        msg_byte = message.getBytes();
     }
 
     public Proto_Sender(int type, String m, int time) {
@@ -52,7 +53,7 @@ public class Proto_Sender {
 
         udpSocket.send(packet);
         day = new Date();
-        System.out.println(df.format(day) + " [<=Sender] Unicast msg:" + message);
+        System.out.println(df.format(day) + " [<=Sender] Unicast msg to 224.0.0.50/9898:" + message);
 
         udpSocket.close();
     }
@@ -72,7 +73,7 @@ public class Proto_Sender {
 
         udpSocket.send(packet);
         day = new Date();
-        System.out.println(df.format(day) + " [<=Sender] Multicast msg:" + msg);
+        System.out.println(df.format(day) + " [<=Sender] Multicast msg to 224.0.0.50/4321:" + msg);
 
         udpSocket.close();
     }

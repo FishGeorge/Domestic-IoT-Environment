@@ -10,7 +10,7 @@ public class Test_CommuProto {
     private static final int SinUnic = 0, MulUnic = 1, SinMulc = 2, MulMulc = 3;
     private static final String[] IVparameter
             = new String[]{"0x17", "0x99", "0x6d", "0x09", "0x3d", "0x28", "0xdd", "0xb3", "0xba", "0x69", "0x5a", "0x2e", "0x6f", "0x58", "0x56", "0x2e"};
-    private static String Key = "";// lumi通信协议密码，于米家App中查看
+    private static String Key = "ntupng4kfjqrk5ad";// lumi通信协议密码，于米家App中查看
 
     public static void main(String args[]) {
         // UDP通信测试
@@ -35,12 +35,13 @@ public class Test_CommuProto {
         Proto_Receiver RecvWriteAck = new Proto_Receiver(SinUnic, 9898);
 
         RecvHeartB.Run();
-        JSONObject HeartBMsgRecv_json = new JSONObject().fromObject(RecvHeartB.GetRecvMsg());
         try {
+            Thread.sleep(10000);
+            JSONObject HeartBMsgRecv_json = new JSONObject().fromObject(RecvHeartB.GetRecvHeartBMsg());
             day = new Date();
             System.out.println(df.format(day) + " gateway_sid: " + HeartBMsgRecv_json.getString("sid"));
             System.out.println(df.format(day) + " token: " + HeartBMsgRecv_json.getString("token"));
-            Gateway_sid = HeartBMsgRecv_json.getString("token");
+            Gateway_sid = HeartBMsgRecv_json.getString("sid");
             WriteKEY = Aes.Encrypt2Hex(HeartBMsgRecv_json.getString("token"));
             day = new Date();
             System.out.println(df.format(day) + " Gateway_sid: " + Gateway_sid);
@@ -48,7 +49,10 @@ public class Test_CommuProto {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        SendWrite.SetSendMsg("{\"cmd\":\"write\",\"model\":\"gateway\",\"sid\":\"" + Gateway_sid + "\",\"short_id\":0,\"data\":\"{\"rgb\":4278255360}\" },\"key\":\"" + WriteKEY + "\"");
+        // RGB绿色
+//        SendWrite.SetSendMsg("{\"cmd\":\"write\",\"model\":\"gateway\",\"sid\":\"" + Gateway_sid + "\",\"short_id\":0,\"data\":\"{\"rgb\":4278255360\",\"key\":\"" + WriteKEY + "\"}\"}");
+        // RGB关闭
+        SendWrite.SetSendMsg("{\"cmd\":\"write\",\"model\":\"gateway\",\"sid\":\"" + Gateway_sid + "\",\"short_id\":0,\"data\":\"{\"rgb\":0000000000\",\"key\":\"" + WriteKEY + "\"}\"}");
         RecvWriteAck.Run();
         SendWrite.Run();
     }
