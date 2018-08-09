@@ -22,13 +22,13 @@ public class Proto_AES_CBC_128 {
     private Proto_AES_CBC_128 instance = null;
 
     //private static
-    private Proto_AES_CBC_128(String[] IVPm, String KEY) {
+    public Proto_AES_CBC_128(String[] IVPm, String KEY) {
         mKey = KEY;
         StrIVParameter = IVPm;
         BytIVPatameter = HexStr2byte(StrIVParameter);
     }
 
-    private Proto_AES_CBC_128(String KEY) {
+    public Proto_AES_CBC_128(String KEY) {
         mKey = KEY;
     }
 
@@ -125,4 +125,3 @@ public class Proto_AES_CBC_128 {
         System.out.println("加密后的lumi用字串是（只有前16项/32）：" + EnString);
     }
 }
-

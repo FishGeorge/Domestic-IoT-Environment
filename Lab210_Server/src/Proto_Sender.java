@@ -17,7 +17,6 @@ public class Proto_Sender {
 
     private byte[] msg_byte;
     private DatagramPacket packet = null;
-
     private MulticastSocket udpSocket = null;
 
     public Proto_Sender(int type) {
@@ -28,6 +27,10 @@ public class Proto_Sender {
         send_type = type;
         message = m;
         msg_byte = message.getBytes();
+    }
+
+    public void SetSendMsg(String msg) {
+        message = msg;
     }
 
     public Proto_Sender(int type, String m, int time) {

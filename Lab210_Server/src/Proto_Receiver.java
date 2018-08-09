@@ -17,7 +17,6 @@ public class Proto_Receiver {
     private int length = 1000;
 
     private DatagramPacket packet = null;
-
     private MulticastSocket mcSocket = null;
 
     public Proto_Receiver(int type, int port) {
@@ -25,7 +24,7 @@ public class Proto_Receiver {
         Port = port;
     }
 
-    public void Unicast_Receive() throws Exception {
+    private void Unicast_Receive() throws Exception {
         packet = new DatagramPacket(new byte[length], length);
         mcSocket = new MulticastSocket(Port);
 
@@ -35,7 +34,7 @@ public class Proto_Receiver {
 //        mcSocket.close();
     }
 
-    public void Multicast_Receive() throws Exception {
+    private void Multicast_Receive() throws Exception {
         packet = new DatagramPacket(new byte[length], length);
         mcSocket = new MulticastSocket(Port);
         IpAddr = InetAddress.getByName(IpAddress);
@@ -46,6 +45,10 @@ public class Proto_Receiver {
 
 //        mcSocket.leaveGroup(IpAddr);
 //        mcSocket.close();
+    }
+
+    public String GetRecvMsg() {
+        return message;
     }
 
     public void Run() {
@@ -67,7 +70,7 @@ public class Proto_Receiver {
                             break;
                         case 1:
                             Unicast_Receive();
-                            while(true) {
+                            while (true) {
                                 mcSocket.receive(packet);
                                 message = new String(packet.getData(), packet.getOffset(), packet.getLength());
                                 day = new Date();
