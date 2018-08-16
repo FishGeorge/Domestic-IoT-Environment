@@ -23,6 +23,6 @@ public class Proto_Device {
 
     @Override
     public String toString() {
-        return "设备类型: " + model + " 设备id: " + sid;
+        return "设备type: " + model + " 设备id: " + sid + " 设备short id: " + shortid;
     }
 }

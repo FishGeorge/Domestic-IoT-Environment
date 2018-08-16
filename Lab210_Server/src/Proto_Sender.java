@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Proto_Sender {
-    private Date day = null;
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private InetAddress IpAddr = null;
@@ -52,8 +51,7 @@ public class Proto_Sender {
         packet.setPort(Port);
 
         udpSocket.send(packet);
-        day = new Date();
-        System.out.println(df.format(day) + " [<=Sender] Unicast msg to 224.0.0.50/9898:" + message);
+        System.out.println(df.format(new Date()) + " [<=Sender] Unicast msg to 224.0.0.50/9898:" + message);
 
         udpSocket.close();
     }
@@ -72,8 +70,7 @@ public class Proto_Sender {
         packet.setPort(Port);
 
         udpSocket.send(packet);
-        day = new Date();
-        System.out.println(df.format(day) + " [<=Sender] Multicast msg to 224.0.0.50/4321:" + msg);
+        System.out.println(df.format(new Date()) + " [<=Sender] Multicast msg to 224.0.0.50/4321:" + msg);
 
         udpSocket.close();
     }
