@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Test_CommuProto {
-    private static Date day = null;
     private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private static final int SinUnic = 0, MulUnic = 1, SinMulc = 2, MulMulc = 3;
@@ -38,14 +37,12 @@ public class Test_CommuProto {
         try {
             Thread.sleep(10000);
             JSONObject HeartBMsgRecv_json = new JSONObject().fromObject(RecvHeartB.GetRecvHeartBMsg());
-            day = new Date();
-            System.out.println(df.format(day) + " gateway_sid: " + HeartBMsgRecv_json.getString("sid"));
-            System.out.println(df.format(day) + " token: " + HeartBMsgRecv_json.getString("token"));
+            System.out.println(df.format(new Date()) + " gateway_sid: " + HeartBMsgRecv_json.getString("sid"));
+            System.out.println(df.format(new Date()) + " token: " + HeartBMsgRecv_json.getString("token"));
             Gateway_sid = HeartBMsgRecv_json.getString("sid");
             WriteKEY = Aes.Encrypt2Hex(HeartBMsgRecv_json.getString("token"));
-            day = new Date();
-            System.out.println(df.format(day) + " Gateway_sid: " + Gateway_sid);
-            System.out.println(df.format(day) + " 加密得到的KEY: " + WriteKEY);
+            System.out.println(df.format(new Date()) + " Gateway_sid: " + Gateway_sid);
+            System.out.println(df.format(new Date()) + " 加密得到的KEY: " + WriteKEY);
         } catch (Exception e) {
             e.printStackTrace();
         }

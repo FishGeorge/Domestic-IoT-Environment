@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3dd48c-7cbe-4d35-abd0-644843603a0e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Proto_Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proto_Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proto_Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test_CommuProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test_CommuProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/LUMI_CommuProto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab210_Server/LUMI_CommuProto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Sender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_CommuProto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_MulticastProtocol$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_MulticastProtocol$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_MulticastProtocol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Test_Receiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LUMI_CommuProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_CommuProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_CommuProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_MulticastProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_MulticastProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,33 +28,33 @@
     <session id="-2065641265">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.10" value="5" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.10" value="6" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="13" />
-          <entry key="java" value="4329" />
+          <entry key="dummy" value="19" />
+          <entry key="java" value="5633" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4329" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="JAVA" value="5633" />
+          <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="18" />
+          <entry key="java" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="25" />
         </counts>
       </usages-collector>
     </session>
@@ -55,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Proto_Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="-299">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -64,32 +73,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Proto_Receiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2231">
-              <caret line="101" column="111" selection-start-line="101" selection-start-column="111" selection-end-line="101" selection-end-column="111" />
+            <state relative-caret-position="187">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="28" />
               <folding>
-                <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1633#1634#0" expanded="true" />
-                <element signature="e#1663#1664#0" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Proto_AES_CBC_128.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-271">
-              <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+            <state relative-caret-position="-115">
+              <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lumi_CommuProto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+              <folding>
+                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1251#1252#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test_CommuProto.java">
+        <entry file="file://$PROJECT_DIR$/src/SensorsRecordingSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="23">
+              <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Proto_Device.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding>
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,11 +153,15 @@
         <option value="$PROJECT_DIR$/src/MulticastProtocol.java" />
         <option value="$PROJECT_DIR$/src/Test_MulticastProtocol.java" />
         <option value="$PROJECT_DIR$/src/Demo_AES_CBC_128.java" />
-        <option value="$PROJECT_DIR$/src/LUMI_CommuProto.java" />
         <option value="$PROJECT_DIR$/src/Proto_Receiver.java" />
-        <option value="$PROJECT_DIR$/src/Test_CommuProto.java" />
         <option value="$PROJECT_DIR$/src/Proto_Sender.java" />
         <option value="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" />
+        <option value="$PROJECT_DIR$/src/Test_CommuProto.java" />
+        <option value="$PROJECT_DIR$/src/LUMI_CommuProto.java" />
+        <option value="$PROJECT_DIR$/src/Device.java" />
+        <option value="$PROJECT_DIR$/src/Proto_Device.java" />
+        <option value="$PROJECT_DIR$/src/SensorsRecordingSystem.java" />
+        <option value="$PROJECT_DIR$/src/Lumi_CommuProto.java" />
       </list>
     </option>
   </component>
@@ -139,8 +178,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="58" />
-    <option name="y" value="-12" />
+    <option name="x" value="37" />
+    <option name="y" value="-10" />
     <option name="width" value="974" />
     <option name="height" value="756" />
   </component>
@@ -152,8 +191,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,24 +204,40 @@
             <path>
               <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533792324295" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534408367543" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub\IOT-SmartLab\Lab210_Server\test" />
+      <recent name="F:\GitHub\IOT-SmartLab\Lab210_Server\src" />
+      <recent name="F:\GitHub\IOT-SmartLab\Lab210_Server\out" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -268,17 +324,18 @@
       <workItem from="1533726153541" duration="9195000" />
       <workItem from="1533784783225" duration="2644000" />
       <workItem from="1533787847979" duration="192000" />
+      <workItem from="1534396648300" duration="11047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21741000" />
+    <option name="totallyTimeSpent" value="32788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1108742" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -287,7 +344,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32296136" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32286024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,14 +372,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test_Receiver.java">
+    <entry file="file://$PROJECT_DIR$/test/Test_Receiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_MulticastProtocol.java">
+    <entry file="file://$PROJECT_DIR$/test/Test_MulticastProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1274">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="29" />
@@ -330,51 +387,67 @@
       </provider>
     </entry>
     <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/net/DatagramSocket.java" />
-    <entry file="file://$PROJECT_DIR$/src/LUMI_CommuProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_CommuProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/Proto_Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="-299">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Proto_Receiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2231">
-          <caret line="101" column="111" selection-start-line="101" selection-start-column="111" selection-end-line="101" selection-end-column="111" />
+        <state relative-caret-position="187">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="28" />
           <folding>
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test_CommuProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Proto_AES_CBC_128.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+        <state relative-caret-position="-115">
+          <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Proto_Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SensorsRecordingSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lumi_CommuProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+          <folding>
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
