@@ -5,23 +5,23 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /*
- * Lumi_CommuProto
+ * LumiProtoUtil
  *
  *
  */
-public class Lumi_CommuProto {
+public class LumiProtoUtil {
     private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private static final int SinUnic = 0, MulUnic = 1, SinMulc = 2, MulMulc = 3;
-    private Proto_Sender
+    private ProtoSender
             Send_DiscGW = null,
             Send_QueSubD = null,
             Send_SinUnic = null;
-//    private Proto_Receiver
+//    private ProtoReceiver
 //            Recv_MulMulc9898_1 = null,
 //            Recv_SinUnic4321 = null,
 //            Recv_SinUnic9898 = null;
-//    public Proto_Receiver
+//    public ProtoReceiver
 //            Recv_MulMulc9898_2 = null;
 
     private String Gateway_sid = "";
@@ -32,32 +32,33 @@ public class Lumi_CommuProto {
     private static final String[]
             IVparameter = new String[]{"0x17", "0x99", "0x6d", "0x09", "0x3d", "0x28", "0xdd", "0xb3", "0xba", "0x69", "0x5a", "0x2e", "0x6f", "0x58", "0x56", "0x2e"};
     private static String Key = "";// lumi通信协议密码，于米家App中查看
-    private Proto_AES_CBC_128 Aes = null;
+    private AES_CBC_128 Aes = null;
     private String WriteKEY = "null";
 
-    private ArrayList<Proto_Device> SubDevices = new ArrayList<>();
+    private ArrayList<ProtoDevice> SubDevices = new ArrayList<>();
 
-    public Lumi_CommuProto(String LumiKey) throws InterruptedException {
+    public LumiProtoUtil(String LumiKey) throws InterruptedException {
         this.Init(LumiKey);
     }
 
     public void Init(String LumiKey) throws InterruptedException {
-        Send_DiscGW = new Proto_Sender(SinMulc, "{\"cmd\":\"whois\"}");
-        Send_QueSubD = new Proto_Sender(SinUnic, "{\"cmd\":\"get_id_list\"}");
-        Send_SinUnic = new Proto_Sender(SinUnic);
-//        Recv_MulMulc9898_1 = new Proto_Receiver(MulMulc, 9898);
-//        Recv_MulMulc9898_2 = new Proto_Receiver(MulMulc, 9898);
-//        Recv_SinUnic4321 = new Proto_Receiver(SinUnic, 4321);
-//        Recv_SinUnic9898 = new Proto_Receiver(SinUnic, 9898);
-
+        Send_DiscGW = new ProtoSender(SinMulc, "{\"cmd\":\"whois\"}");
+        Send_QueSubD = new ProtoSender(SinUnic, "{\"cmd\":\"get_id_list\"}");
+        Send_SinUnic = new ProtoSender(SinUnic);
+//        Recv_MulMulc9898_1 = new ProtoReceiver(MulMulc, 9898);
+//        Recv_MulMulc9898_2 = new ProtoReceiver(MulMulc, 9898);
+//        Recv_SinUnic4321 = new ProtoReceiver(SinUnic, 4321);
+//        Recv_SinUnic9898 = new ProtoReceiver(SinUnic, 9898);
         DiscGateway();
+        Thread.sleep(1000);
         QueSubDevices();
 
         Key = LumiKey;
-        Aes = new Proto_AES_CBC_128(IVparameter, Key);
+        Aes = new AES_CBC_128(IVparameter, Key);
         System.out.println(df.format(new Date()) + " Lumi局域网通信协议初始化成功。");
         System.out.println(df.format(new Date()) + " Protocol信息：\n" + this);
 
+        Thread.sleep(1000);
         GetGWtoken();
     }
 
@@ -70,7 +71,7 @@ public class Lumi_CommuProto {
     }
 
     private void DiscGateway() throws InterruptedException {
-        Proto_Receiver Recv_SinUnic4321 = new Proto_Receiver(SinUnic, 4321);
+        ProtoReceiver Recv_SinUnic4321 = new ProtoReceiver(SinUnic, 4321);
         Recv_SinUnic4321.Run();
         Send_DiscGW.Run();
         while (true) {
@@ -90,7 +91,7 @@ public class Lumi_CommuProto {
     }
 
     private void QueSubDevices() throws InterruptedException {
-        Proto_Receiver Recv_SinUnic9898 = new Proto_Receiver(SinUnic, 9898);
+        ProtoReceiver Recv_SinUnic9898 = new ProtoReceiver(SinUnic, 9898);
         Recv_SinUnic9898.Run();
         Send_QueSubD.Run();
         while (true) {
@@ -107,7 +108,7 @@ public class Lumi_CommuProto {
                     Ans_json = ReadDevice(sid);
                     Thread.sleep(250);
 //                    System.out.println("t4");
-                    SubDevices.add(new Proto_Device(Ans_json.getString("model"), sid, Ans_json.getString("short_id")));
+                    SubDevices.add(new ProtoDevice(Ans_json.getString("model"), sid, Ans_json.getString("short_id")));
 //                    System.out.println("t2");
                 }
                 break;
@@ -119,7 +120,7 @@ public class Lumi_CommuProto {
         Thread RefreshToken = new Thread(new Runnable() {
             @Override
             public void run() {
-                Proto_Receiver Recv_MulMulc9898 = new Proto_Receiver(MulMulc, 9898);
+                ProtoReceiver Recv_MulMulc9898 = new ProtoReceiver(MulMulc, 9898);
                 Recv_MulMulc9898.Run();
                 while (true) {
 //                    System.out.println("t8");
@@ -154,7 +155,7 @@ public class Lumi_CommuProto {
 
     public JSONObject ReadDevice(String sid) throws InterruptedException {
         Send_SinUnic.SetSendMsg("{\"cmd\":\"read\",\"sid\":\"" + sid + "\"}");
-        Proto_Receiver Recv_SinUnic9898 = new Proto_Receiver(SinUnic, 9898);
+        ProtoReceiver Recv_SinUnic9898 = new ProtoReceiver(SinUnic, 9898);
         Recv_SinUnic9898.Run();
         Send_SinUnic.Run();
         while (true) {
@@ -168,13 +169,13 @@ public class Lumi_CommuProto {
         return JSONObject.fromObject(Ans);
     }
 
-    public JSONObject WriteDevice(Proto_Device dev, String data) {
+    public JSONObject WriteDevice(ProtoDevice dev, String data) {
         Send_SinUnic.SetSendMsg("{\"cmd\":\"write\"," +
                 "\"model\":\"" + dev.getModel() + "\"," +
                 "\"sid\":\"" + dev.getSid() + "\"," +
                 "\"short_id\":" + dev.getShortid() + "\"," +
                 "\"data\":\"" + data + "\"}");
-        Proto_Receiver Recv_SinUnic9898 = new Proto_Receiver(SinUnic, 9898);
+        ProtoReceiver Recv_SinUnic9898 = new ProtoReceiver(SinUnic, 9898);
         Recv_SinUnic9898.Run();
         Send_SinUnic.Run();
         return JSONObject.fromObject(Recv_SinUnic9898.GetRecvMsg());
@@ -187,14 +188,14 @@ public class Lumi_CommuProto {
 
     public String ShowSubDevices() {
         StringBuilder stringB = new StringBuilder();
-        for (Proto_Device dev : SubDevices) {
+        for (ProtoDevice dev : SubDevices) {
             stringB.append(dev.toString()).append("\n");
         }
         return stringB.toString();
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Lumi_CommuProto lumiproto = new Lumi_CommuProto("ntupng4kfjqrk5ad");
+        LumiProtoUtil lumiproto = new LumiProtoUtil("ntupng4kfjqrk5ad");
 //        Thread.sleep(30000);
     }
 }

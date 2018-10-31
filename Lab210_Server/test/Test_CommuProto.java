@@ -14,16 +14,16 @@ public class Test_CommuProto {
     public static void main(String args[]) {
         // UDP通信测试
         // 1) 接收器循环接受组播
-//        new Proto_Receiver(MulMulc,9898).Run();
+//        new ProtoReceiver(MulMulc,9898).Run();
         // 2) 接收器单次接受组播
-//        new Proto_Receiver(SinMulc,9898).Run();
+//        new ProtoReceiver(SinMulc,9898).Run();
         // 3) 接收器单次接受单播（配合发送器）
         // i) 发送器单次发送组播
-//        new Proto_Sender(SinMulc).Run();
-//        new Proto_Receiver(SinUnic, 4321).Run();
+//        new ProtoSender(SinMulc).Run();
+//        new ProtoReceiver(SinUnic, 4321).Run();
         // ii) 发送器单次发送单播
-//        new Proto_Sender(SinUnic, "{\"cmd\":\"get_id_list\"}").Run();
-//        new Proto_Receiver(SinUnic, 9898).Run();
+//        new ProtoSender(SinUnic, "{\"cmd\":\"get_id_list\"}").Run();
+//        new ProtoReceiver(SinUnic, 9898).Run();
 
         // 写设备测试 暨AES-CBC-128加密测试
         Proto_AES_CBC_128 Aes = new Proto_AES_CBC_128(IVparameter, Key);

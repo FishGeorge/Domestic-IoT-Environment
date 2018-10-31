@@ -4,7 +4,7 @@ import java.net.MulticastSocket;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Proto_Sender {
+public class ProtoSender {
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private InetAddress IpAddr = null;
@@ -18,11 +18,13 @@ public class Proto_Sender {
     private DatagramPacket packet = null;
     private MulticastSocket udpSocket = null;
 
-    public Proto_Sender(int type) {
+    private DBManager dbManager = new DBManager();
+
+    public ProtoSender(int type) {
         send_type = type;
     }
 
-    public Proto_Sender(int type, String m) {
+    public ProtoSender(int type, String m) {
         send_type = type;
         message = m;
         msg_byte = message.getBytes();
@@ -33,7 +35,7 @@ public class Proto_Sender {
         msg_byte = message.getBytes();
     }
 
-    public Proto_Sender(int type, String m, int time) {
+    public ProtoSender(int type, String m, int time) {
         send_type = type;
         message = m;
         msg_byte = message.getBytes();
@@ -51,7 +53,9 @@ public class Proto_Sender {
         packet.setPort(Port);
 
         udpSocket.send(packet);
-        System.out.println(df.format(new Date()) + " [<=Sender] Unicast msg to 224.0.0.50/9898:" + message);
+        String dfTime = df.format(new Date());
+        dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "send", "224.0.0.50/9898", message);
+        System.out.println(dfTime + " [<=Sender] Unicast msg to 224.0.0.50/9898: " + message);
 
         udpSocket.close();
     }
@@ -70,7 +74,9 @@ public class Proto_Sender {
         packet.setPort(Port);
 
         udpSocket.send(packet);
-        System.out.println(df.format(new Date()) + " [<=Sender] Multicast msg to 224.0.0.50/4321:" + msg);
+        String dfTime = df.format(new Date());
+        dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "send", "224.0.0.50/4321", msg);
+        System.out.println(dfTime + " [<=Sender] Multicast msg to 224.0.0.50/4321: " + msg);
 
         udpSocket.close();
     }

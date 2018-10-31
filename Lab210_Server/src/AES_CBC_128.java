@@ -15,20 +15,20 @@ import java.nio.charset.StandardCharsets;
  * <p>
  * （提供其他的加密输出，用于lumi局域网通信协议）
  */
-public class Proto_AES_CBC_128 {
+public class AES_CBC_128 {
     private String mKey = null;
     private String[] StrIVParameter = null;
     private byte[] BytIVPatameter = null;
-    private Proto_AES_CBC_128 instance = null;
+    private AES_CBC_128 instance = null;
 
     //private static
-    public Proto_AES_CBC_128(String[] IVPm, String KEY) {
+    public AES_CBC_128(String[] IVPm, String KEY) {
         mKey = KEY;
         StrIVParameter = IVPm;
         BytIVPatameter = HexStr2byte(StrIVParameter);
     }
 
-    public Proto_AES_CBC_128(String KEY) {
+    public AES_CBC_128(String KEY) {
         mKey = KEY;
     }
 
@@ -109,7 +109,7 @@ public class Proto_AES_CBC_128 {
         String KeySample = "0987654321qwerty";
         System.out.println("加密使用的key：" + KeySample);
         // 算法操作对象
-        Proto_AES_CBC_128 mAES = new Proto_AES_CBC_128(IVpSample, KeySample);
+        AES_CBC_128 mAES = new AES_CBC_128(IVpSample, KeySample);
         // 需要加密的字串
         String TokenSample = "1234567890abcdef";
         System.out.println("明文是：" + TokenSample);

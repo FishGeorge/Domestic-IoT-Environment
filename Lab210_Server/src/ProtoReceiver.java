@@ -4,7 +4,7 @@ import java.net.MulticastSocket;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Proto_Receiver {
+public class ProtoReceiver {
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private String IpAddress = "224.0.0.50";
@@ -19,7 +19,9 @@ public class Proto_Receiver {
     private DatagramPacket packet = null;
     private MulticastSocket mcSocket = null;
 
-    public Proto_Receiver(int type, int port) {
+    private DBManager dbManager=new DBManager();
+
+    public ProtoReceiver(int type, int port) {
         receive_type = type;
         Port = port;
     }
@@ -68,7 +70,9 @@ public class Proto_Receiver {
                             Unicast_Receive();
                             mcSocket.receive(packet);
                             message = new String(packet.getData(), packet.getOffset(), packet.getLength());
-                            System.out.println(df.format(new Date()) + " [=>Receiver] Unicast msg:" + message);
+                            String dfTime = df.format(new Date());
+                            dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "receive", "", message);
+                            System.out.println(dfTime + " [=>Receiver] Unicast msg: " + message);
 
                             mcSocket.close();
                             System.out.println(df.format(new Date()) + " [=>Receiver] UniR ends.");
@@ -78,7 +82,9 @@ public class Proto_Receiver {
                             while (true) {
                                 mcSocket.receive(packet);
                                 message = new String(packet.getData(), packet.getOffset(), packet.getLength());
-                                System.out.println(df.format(new Date()) + " [=>Receiver] Unicast msg:" + message);
+                                dfTime = df.format(new Date());
+                                dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "receive", "", message);
+                                System.out.println(dfTime + " [=>Receiver] Unicast msg: " + message);
                             }
                         case 2:
                             Multicast_Receive();
@@ -86,7 +92,9 @@ public class Proto_Receiver {
                             message = new String(packet.getData(), packet.getOffset(), packet.getLength());
                             if (message.contains("heartbeat"))
                                 heartbeat_msg = message;
-                            System.out.println(df.format(new Date()) + " [=>Receiver] Multicast msg:" + message);
+                            dfTime = df.format(new Date());
+                            dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "receive", "", message);
+                            System.out.println(dfTime + " [=>Receiver] Multicast msg: " + message);
 
                             mcSocket.leaveGroup(IpAddr);
                             mcSocket.close();
@@ -101,7 +109,9 @@ public class Proto_Receiver {
 //                                    System.out.println("t7");
                                     heartbeat_msg = message;
                                 }
-                                System.out.println(df.format(new Date()) + " [=>Receiver] Multicast msg:" + message);
+                                dfTime = df.format(new Date());
+                                dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "receive", "", message);
+                                System.out.println(dfTime + " [=>Receiver] Multicast msg: " + message);
                             }
                         default:
                             break;
