@@ -102,7 +102,7 @@ public class AES_CBC_128 {
     }
 
     public static void main(String[] args) throws Exception {
-        // 提供一个Proto_AES_CBC_128使用方法的Demo
+        // Demo: LumiProto中 AES_CBC_128的使用方法
         // AES-CBC-128算法初始向量
         String[] IVpSample = new String[]{"0x17", "0x99", "0x6d", "0x09", "0x3d", "0x28", "0xdd", "0xb3", "0xba", "0x69", "0x5a", "0x2e", "0x6f", "0x58", "0x56", "0x2e"};
         // 算法使用的key

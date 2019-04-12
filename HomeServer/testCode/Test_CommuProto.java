@@ -14,16 +14,16 @@ public class Test_CommuProto {
     public static void main(String args[]) {
         // UDP通信测试
         // 1) 接收器循环接受组播
-//        new ProtoReceiver(MulMulc,9898).Run();
+//        new LumiProtoReceiver(MulMulc,9898).run();
         // 2) 接收器单次接受组播
-//        new ProtoReceiver(SinMulc,9898).Run();
+//        new LumiProtoReceiver(SinMulc,9898).run();
         // 3) 接收器单次接受单播（配合发送器）
         // i) 发送器单次发送组播
-//        new ProtoSender(SinMulc).Run();
-//        new ProtoReceiver(SinUnic, 4321).Run();
+//        new LumiProtoSender(SinMulc).run();
+//        new LumiProtoReceiver(SinUnic, 4321).run();
         // ii) 发送器单次发送单播
-//        new ProtoSender(SinUnic, "{\"cmd\":\"get_id_list\"}").Run();
-//        new ProtoReceiver(SinUnic, 9898).Run();
+//        new LumiProtoSender(SinUnic, "{\"cmd\":\"get_id_list\"}").run();
+//        new LumiProtoReceiver(SinUnic, 9898).run();
 
         // 写设备测试 暨AES-CBC-128加密测试
         Proto_AES_CBC_128 Aes = new Proto_AES_CBC_128(IVparameter, Key);
@@ -47,7 +47,7 @@ public class Test_CommuProto {
             e.printStackTrace();
         }
         // RGB绿色
-//        SendWrite.SetSendMsg("{\"cmd\":\"write\",\"model\":\"gateway\",\"sid\":\"" + Gateway_sid + "\",\"short_id\":0,\"data\":\"{\"rgb\":4278255360\",\"key\":\"" + WriteKEY + "\"}\"}");
+//        SendWrite.setSendMsg("{\"cmd\":\"write\",\"model\":\"gateway\",\"sid\":\"" + Gateway_sid + "\",\"short_id\":0,\"data\":\"{\"rgb\":4278255360\",\"key\":\"" + WriteKEY + "\"}\"}");
         // RGB关闭
         SendWrite.SetSendMsg("{\"cmd\":\"write\",\"model\":\"gateway\",\"sid\":\"" + Gateway_sid + "\",\"short_id\":0,\"data\":\"{\"rgb\":0000000000\",\"key\":\"" + WriteKEY + "\"}\"}");
         RecvWriteAck.Run();

@@ -1,12 +1,10 @@
-# **IOT_SmartLab**
----
+# **Domestic-IoT-Environment**
 ## ***Introduction***
-Establish an IOT environment in the lab!
-<br>运用多传感器搭建局域物联网，打造一个智能实验室(:P)，目的为积累生活数据以用于隐私相关研究。
+A simulative domestic IoT environment in the lab
+<br>模拟运用多种传感器及动作器所搭建的家居物联网环境，~~以积累数据以用于相关研究~~。
 
----
 ## ***Release Notes***
-<font size=4>局域网传感器记录系统</font>
+<font size=4>家庭传感器管理系统</font>
 ---
 更新时间|版本|内容
 :--|:--|:--
@@ -18,6 +16,7 @@ Establish an IOT environment in the lab!
 2018.8.9|v0.4.2|#对AES加密功能进行了少量添改，提供HeartBeat消息的Get接口<br>#通过了AES加密功能（Write操作）部分的测试，测试demo见Test_CommuProto.java_main()
 2018.8.16|v0.5.0|#适配了Lumi通信协议全部功能<br>#proto输出尚未接口化<br>#v0.5.1测试通过，迭代开发时请注意多线程同步问题
 2018.10.31|v0.6.0|#更新了传感器记录系统原型<br>#时隔两个月忘了proto输出接口化是什么意思...
+2019.4.12|v0.7.0|#源码结构&名称调整<br>#无限拖更制...
 
 <font size=4>信号探测车</font>
 ---
@@ -25,9 +24,8 @@ Establish an IOT environment in the lab!
 :--|:--|:--
 2018.5.30|v0.0.1|寻分界线demo
 
----
 ## ***To Do***
-#√尽快上线&实地部署局域网传感器记录系统<br>
+#_√_尽快上线&实地部署家庭传感器管理系统<br>
 #清晰明了人见人爱的doc<br>
 #~~一个简洁的数据库GUI~~<br>
 #~~一个足够美观的传感器数据实时GUI~~<br>

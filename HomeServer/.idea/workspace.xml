@@ -2,27 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3dd48c-7cbe-4d35-abd0-644843603a0e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/LUMI_CommuProto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Lumi_CommuProto$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_AES_CBC_128.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Device.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Receiver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Receiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Sender$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/Proto_Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab210_Server/SensorsRecordingSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab210_Server/SensorsRecordingSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LUMI_CommuProto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lumi_CommuProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LumiProtoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_AES_CBC_128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AES_CBC_128.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProtoDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProtoReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Proto_Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProtoSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SensorsRecordingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SensorsRecordingSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test_CommuProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_CommuProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/.idea/dataSources/2c2112ba-cd60-472b-b85b-4e0487114501.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/HomeServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/ezmorph-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/json-lib-2.4-jdk15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/lib/mysql-connector-java-8.0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/AES_CBC_128.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/BaseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/DBManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/LumiProtoUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/LumiProtoUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/ProtoDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/ProtoReceiver$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/ProtoReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/ProtoSender$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/ProtoSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/out/production/Lab210_Server/SensorsRecordingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/AES_CBC_128.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/BaseDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/DBManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/LumiProtoUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/ProtoDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/ProtoReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/ProtoSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/src/SensorsRecordingSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/test/Test_CommuProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/test/Test_MulticastProtocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab210_Server/test/Test_Receiver.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,29 +132,62 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1628341433">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="15" />
+          <entry key="java" value="254" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="254" />
+          <entry key="PLAIN_TEXT" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProtoSender.java">
+        <entry file="file://$PROJECT_DIR$/src/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="77" column="17" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="17" />
+            <state relative-caret-position="897">
+              <caret line="90" column="27" lean-forward="true" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding>
-                <element signature="method#Run#0;class#Proto_Sender#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="initializer##0;class#BaseDAO#0" />
+                <element signature="method#prepareConnection#0;class#BaseDAO#0" />
+                <element signature="method#closeConnection#0;class#BaseDAO#0" />
+                <element signature="method#rollback#0;class#BaseDAO#0" />
+                <element signature="method#executeSql#0;class#BaseDAO#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProtoReceiver.java">
+        <entry file="file://$PROJECT_DIR$/src/HomeSensorManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="113" column="103" selection-start-line="113" selection-start-column="103" selection-end-line="113" selection-end-column="103" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -147,40 +195,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LumiProtoUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SensorsRecordingSystem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BaseDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-              <folding>
-                <element signature="method#prepareConnection#0;class#DAO#0" />
-                <element signature="method#close#0;class#DAO#0" />
-                <element signature="method#rollback#0;class#BaseDAO#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="294">
+              <caret line="74" column="41" lean-forward="true" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,10 +205,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AES_CBC_128.java">
+        <entry file="file://$PROJECT_DIR$/src/LumiProtoSender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1679">
-              <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+            <state relative-caret-position="450">
+              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding>
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LumiProtoReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1426">
+              <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LumiProtoDevice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -231,15 +272,19 @@
         <option value="$PROJECT_DIR$/src/Proto_Receiver.java" />
         <option value="$PROJECT_DIR$/src/Lumi_CommuProto.java" />
         <option value="$PROJECT_DIR$/src/Proto_Device.java" />
-        <option value="$PROJECT_DIR$/src/AES_CBC_128.java" />
         <option value="$PROJECT_DIR$/src/Lumi_CommuProto_Util.java" />
         <option value="$PROJECT_DIR$/src/DAO.java" />
         <option value="$PROJECT_DIR$/src/SensorsRecordingSystem.java" />
         <option value="$PROJECT_DIR$/src/DataBaseManager.java" />
-        <option value="$PROJECT_DIR$/src/BaseDAO.java" />
         <option value="$PROJECT_DIR$/src/ProtoReceiver.java" />
         <option value="$PROJECT_DIR$/src/ProtoSender.java" />
+        <option value="$PROJECT_DIR$/src/AES_CBC_128.java" />
+        <option value="$PROJECT_DIR$/src/BaseDAO.java" />
         <option value="$PROJECT_DIR$/src/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/LumiProtoReceiver.java" />
+        <option value="$PROJECT_DIR$/src/LumiProtoDevice.java" />
+        <option value="$PROJECT_DIR$/src/LumiProtoSender.java" />
+        <option value="$PROJECT_DIR$/src/HomeSensorManager.java" />
         <option value="$PROJECT_DIR$/src/LumiProtoUtil.java" />
       </list>
     </option>
@@ -256,7 +301,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="13" />
     <option name="y" value="-11" />
     <option name="width" value="974" />
@@ -270,46 +315,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeServer" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab210_Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab210_Server" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540987928735" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555047410694" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -336,18 +372,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SensorsRecordingSystem">
+  <component name="RunManager" selected="Application.HomeSensorManager">
     <configuration name="AES_CBC_128" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AES_CBC_128" />
-      <module name="Lab210_Server" />
+      <module name="HomeServer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaseDAO" />
-      <module name="Lab210_Server" />
+    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DAO" />
+      <module name="HomeServer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeSensorManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeSensorManager" />
+      <module name="HomeServer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -355,15 +399,7 @@
     </configuration>
     <configuration name="LumiProtoUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LumiProtoUtil" />
-      <module name="Lab210_Server" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SensorsRecordingSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SensorsRecordingSystem" />
-      <module name="Lab210_Server" />
+      <module name="HomeServer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -371,7 +407,7 @@
     </configuration>
     <configuration name="Test_CommuProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test_CommuProto" />
-      <module name="Lab210_Server" />
+      <module name="HomeServer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -398,19 +434,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Proto_AES_CBC_128" />
+      <item itemvalue="Application.AES_CBC_128" />
       <item itemvalue="Application.Test_CommuProto" />
       <item itemvalue="Application.LumiProtoUtil" />
       <item itemvalue="Application.BaseDAO" />
-      <item itemvalue="Application.SensorsRecordingSystem" />
+      <item itemvalue="Application.HomeSensorManager" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SensorsRecordingSystem" />
+        <item itemvalue="Application.HomeSensorManager" />
         <item itemvalue="Application.BaseDAO" />
         <item itemvalue="Application.LumiProtoUtil" />
         <item itemvalue="Application.Test_CommuProto" />
-        <item itemvalue="Application.Proto_AES_CBC_128" />
       </list>
     </recent_temporary>
   </component>
@@ -433,17 +468,18 @@
       <workItem from="1540798713948" duration="547000" />
       <workItem from="1540976343987" duration="2465000" />
       <workItem from="1540979698158" duration="7802000" />
+      <workItem from="1555039451922" duration="4960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43602000" />
+    <option name="totallyTimeSpent" value="48562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122068234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -452,7 +488,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2646421" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2646421" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -503,76 +539,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2c2112ba-cd60-472b-b85b-4e0487114501/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProtoDevice.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2c2112ba-cd60-472b-b85b-4e0487114501/console.sql" />
+    <entry file="file://$PROJECT_DIR$/src/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="230">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AES_CBC_128.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1679">
-          <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+        <state relative-caret-position="225">
+          <caret line="104" column="40" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProtoReceiver.java">
+    <entry file="file://$PROJECT_DIR$/src/LumiProtoDevice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="113" column="103" selection-start-line="113" selection-start-column="103" selection-end-line="113" selection-end-column="103" />
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="90" column="27" lean-forward="true" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProtoSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="17" />
-          <folding>
-            <element signature="method#Run#0;class#Proto_Sender#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          <folding>
-            <element signature="method#prepareConnection#0;class#DAO#0" />
-            <element signature="method#close#0;class#DAO#0" />
+            <element signature="initializer##0;class#BaseDAO#0" />
+            <element signature="method#prepareConnection#0;class#BaseDAO#0" />
+            <element signature="method#closeConnection#0;class#BaseDAO#0" />
             <element signature="method#rollback#0;class#BaseDAO#0" />
+            <element signature="method#executeSql#0;class#BaseDAO#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBManager.java">
+    <entry file="file://$PROJECT_DIR$/src/LumiProtoSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="450">
+          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LumiProtoReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SensorsRecordingSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/HomeSensorManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="138">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LumiProtoUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+        <state relative-caret-position="294">
+          <caret line="74" column="41" lean-forward="true" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

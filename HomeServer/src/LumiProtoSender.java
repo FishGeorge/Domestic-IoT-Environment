@@ -4,7 +4,7 @@ import java.net.MulticastSocket;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ProtoSender {
+public class LumiProtoSender {
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     private InetAddress IpAddr = null;
@@ -18,31 +18,31 @@ public class ProtoSender {
     private DatagramPacket packet = null;
     private MulticastSocket udpSocket = null;
 
-    private DBManager dbManager = new DBManager();
+//    private DBManager dbManager = new DBManager();
 
-    public ProtoSender(int type) {
+    public LumiProtoSender(int type) {
         send_type = type;
     }
 
-    public ProtoSender(int type, String m) {
+    public LumiProtoSender(int type, String m) {
         send_type = type;
         message = m;
         msg_byte = message.getBytes();
     }
 
-    public void SetSendMsg(String msg) {
-        message = msg;
-        msg_byte = message.getBytes();
-    }
-
-    public ProtoSender(int type, String m, int time) {
+    public LumiProtoSender(int type, String m, int time) {
         send_type = type;
         message = m;
         msg_byte = message.getBytes();
         interval = time;
     }
 
-    private void Unicast_Send() throws Exception {
+    public void setSendMsg(String msg) {
+        message = msg;
+        msg_byte = message.getBytes();
+    }
+
+    private void unicastSend() throws Exception {
         IpAddr = InetAddress.getByName("224.0.0.50");
         Port = 9898;
         udpSocket = new MulticastSocket(Port);
@@ -54,13 +54,14 @@ public class ProtoSender {
 
         udpSocket.send(packet);
         String dfTime = df.format(new Date());
-        dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "send", "224.0.0.50/9898", message);
+        // 数据库操作
+        // dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "send", "224.0.0.50/9898", message);
         System.out.println(dfTime + " [<=Sender] Unicast msg to 224.0.0.50/9898: " + message);
 
         udpSocket.close();
     }
 
-    private void Multicast_Send() throws Exception {
+    private void multicastSend() throws Exception {
         String msg = "{\"cmd\":\"whois\"}";
         msg_byte = msg.getBytes();
 
@@ -75,32 +76,33 @@ public class ProtoSender {
 
         udpSocket.send(packet);
         String dfTime = df.format(new Date());
-        dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "send", "224.0.0.50/4321", msg);
+        // 数据库操作
+        // dbManager.Insert_CommRecord(dfTime.split(" ")[0], dfTime.split(" ")[1], "send", "224.0.0.50/4321", msg);
         System.out.println(dfTime + " [<=Sender] Multicast msg to 224.0.0.50/4321: " + msg);
 
         udpSocket.close();
     }
 
-    public void Run() {
-        Thread send = new Thread(new Runnable() {
+    public void run() {
+        Thread sendThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     switch (send_type) {
                         case 0:
-                            Unicast_Send();
+                            unicastSend();
                             break;
                         case 1:
                             while (true) {
-                                Unicast_Send();
+                                unicastSend();
                                 Thread.sleep(interval);
                             }
                         case 2:
-                            Multicast_Send();
+                            multicastSend();
                             break;
                         case 3:
                             while (true) {
-                                Multicast_Send();
+                                multicastSend();
                                 Thread.sleep(interval);
                             }
                         default:
@@ -111,6 +113,6 @@ public class ProtoSender {
                 }
             }
         });
-        send.start();
+        sendThread.start();
     }
 }

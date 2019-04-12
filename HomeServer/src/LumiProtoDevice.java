@@ -1,9 +1,9 @@
-public class ProtoDevice {
+public class LumiProtoDevice {
     private String model = "";
     private String sid = "";
     private String shortid = "";
 
-    public ProtoDevice(String model, String sid, String shortid) {
+    public LumiProtoDevice(String model, String sid, String shortid) {
         this.model = model;
         this.sid = sid;
         this.shortid = shortid;
